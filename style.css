@@ -7,7 +7,9 @@
 
 @font-face {
     font-family: "SchoolBook";
-    src: url("../fonts/SchoolBook.ttf") format("truetype");
+    src: url("../fonts/Schoolbook Regular.ttf") format("truetype");
+    font-weight: normal;
+	font-style: normal;
 }
 
 body {   
@@ -71,15 +73,11 @@ body {
 }
 
 .header {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     top: 0;
     left: 0;
     z-index: 50;
-}
-
-.main {
-    flex: 1 1 auto;
 }
 
 .header__logo {
@@ -163,18 +161,6 @@ body {
     display: none;
 }
 
-.icon-menu::before,
-.icon-menu::after {
-    content: "";
-    background-color: #59443F;
-    height: 2px;
-}
-
-.icon-menu span {
-    height: 2px;
-    background-color: #59443F;
-}
-
 @media (max-width: 991.98px) { 
     .header__container {
         min-height: 110px;
@@ -188,7 +174,19 @@ body {
         flex-direction: column;
         justify-content: space-between;
         margin: 0 10px 0 35px;
-        }
+    }
+
+    .icon-menu::before,
+    .icon-menu::after {
+        content: "";
+        background-color: #59443F;
+        height: 2px;
+    }
+        
+    .icon-menu span {
+        height: 2px;
+        background-color: #59443F;
+    }
 
     .menu__body {
         position: fixed;
@@ -227,3 +225,54 @@ body {
     margin-bottom: 0;
     }
  }
+
+ /* --------------------------
+        MAIN 
+ -----------------------------
+    making-appointment
+ ----------------------------*/
+
+ .main {
+    flex: 1 1 auto;
+}
+
+.making-appointment__container {
+    display: flex;
+}
+
+.making-appointment__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0 80px 0;
+}
+
+.making-appointment-text {
+    font-family: "SchoolBook";
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 110px;
+    color: #080606;
+}
+
+.making-appointment-button {
+    background: #FFC59E;
+    box-shadow: 0px 4px 20px #FFC59E;
+    border-radius: 33.5px;
+    height: 66px;
+    width: 284px;
+    left: 0px;
+    top: 0px;
+    border: 0;
+}
+
+.button-link {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 2.0;
+}
+
+.social-item {
+    padding-right: 50px;
+}

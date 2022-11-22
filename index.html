@@ -10,7 +10,7 @@
 <body>
     <div class="wraper">
         <header class="header">
-            <div class="header__container">
+            <div id="close" class="header__container">
                 <a href="" class="header__logo"><img src="/pictures/logo.png" alt="Логотип"></a>
                 <div class="header__menu menu">
                     <nav id="menu" class="menu__body">
@@ -31,22 +31,25 @@
             </div>
         </header>
         <main class="main">
-            <section class="appointment">
-                <div class="sing">
-                    <h1>Айболит <br> круглосуточная <br> ветклиника</h1>
-                    <button class="sing-up">Записаться</button>
-                    <div class="social">
-                        <a href=""><img src="/pictures/inst.png" alt=""></a>
-                        <a href=""><img src="/pictures/fb.png" alt=""></a>
-                        <a href=""><img src="/pictures/vk.png" alt=""></a>
-                        <a href=""><img src="/pictures/youtube.png" alt=""></a>
+            <section class="making-appointment">
+                <div class="making-appointment__container">
+                    <div class="making-appointment__content">
+                        <div>
+                            <h1 class="making-appointment-text">Айболит <br> круглосуточная <br> ветклиника</h1>
+                            <button class="making-appointment-button"><a class="button-link link">Записаться</a></button>
+                        </div>
+                        <div class="social__list">
+                            <a class="social-item" href=""><img src="/pictures/making-appointment/inst.png" alt=""></a>
+                            <a class="social-item" href=""><img src="/pictures/making-appointment/fb.png" alt=""></a>
+                            <a class="social-item" href=""><img src="/pictures/making-appointment/vk.png" alt=""></a>
+                            <a class="social-item" href=""><img src="/pictures/making-appointment/youtube.png" alt=""></a>
+                        </div>
+                    </div>
+                     <div class="making-appointment__image">
+                        <img src="/pictures/making-appointment/cat-dog.svg" alt="Cat and dog">
+                        <!-- <p class="making-appointment-number link">+7 (8442) 96 22 92</p> -->
                     </div>
                 </div>
-                 <div class="images">
-                    <img width="25%" src="/pictures/cat.png" alt="">
-                    <img width="50%" src="/pictures/dog.png" alt="">
-                </div>
-                <p>+7 (8442) 96 22 92</p>
             </section>
         </main>
         <footer class="footer">
