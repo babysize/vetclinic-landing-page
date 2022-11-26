@@ -34,17 +34,24 @@
             <section class="making-appointment">
                 <div class="making-appointment__container">
                     <div class="list-button-slide">
-                        <button id="slide-one" class="slide link">1</button>
-                        <button id="slide-one" class="slide link">2</button>
-                        <button id="slide-one" class="slide link">3</button>
-                        <button id="slide-one" class="slide link">4</button>
-                        <button id="slide-one" class="slide link">5</button>
-                        <button id="slide-one" class="slide link">6</button>
+                        <button id="buttonOne" class="button-slide button-active link">1</button>
+                        <button id="buttonTwo" class="button-slide link">2</button>
+                        <button id="buttonThree" class="button-slide link">3</button>
+                        <button id="buttonFour" class="button-slide link">4</button>
+                        <button id="buttonFive" class="button-slide link">5</button>
+                        <button id="buttonSix" class="button-slide link">6</button>
                     </div>
                     <div class="making-appointment__content">
                         <div>
-                            <h1 class="making-appointment-text">Айболит <br> круглосуточная <br> ветклиника</h1>
-                            <button class="making-appointment-button link"><a href="#make-appoint" class="button-link link">Записаться</a></button>
+                            <div class="making-appointment-text">
+                                <h1 id="firstSlideText" class="text-active text">Айболит<br>круглосуточная<br>ветклиника</h1>
+                                <h1 id="secondSlideText" class="text">Комфортныые<br>оборудованнные<br>стационары</h1>
+                                <h1 id="thirdSlideText" class="text">Новейшее<br>европейское<br>оборудование</h1>
+                                <h1 id="fourthSlideText" class="text">Собственнаяя<br>современная<br>лаборатория</h1>
+                                <h1 id="fifthSlideText" class="text">Зоомагазин<br>по доступным<br>ценам</h1>
+                                <h1 id="sixthSlideText" class="text">Груминг салон<br>и косметические<br>товары</h1>
+                            </div>
+                            <button class="making-appointment-button button-link link">Записаться</button>
                         </div>
                         <div class="conection">
                             <div class="social__list">
@@ -57,8 +64,13 @@
                         </div>
                     </div>
                      <div class="making-appointment__image">
-                        <img id="catdog-first-slide" src="/pictures/making-appointment/cat-dog.svg" alt="Cat and dog">
-                        <img id="cat-first-slide" src="/pictures/making-appointment/cat.svg" alt="Cat">
+                        <img class="image-slide image-active" src="/pictures/making-appointment/slide1.svg" alt="Cat and dog">
+                        <img class="image-slide" src="/pictures/making-appointment/slide2.svg" alt="doctor and dog">
+                        <img class="image-slide" src="/pictures/making-appointment/slide3.svg" alt="dog">
+                        <img class="image-slide" src="/pictures/making-appointment/slide4.svg" alt="rabbit">
+                        <img class="image-slide" src="/pictures/making-appointment/slide5.svg" alt="cat">
+                        <img class="image-slide" src="/pictures/making-appointment/slide6.svg" alt="dogs">
+                        <img class="small-slide" src="/pictures/making-appointment/cat.svg" alt="Cat">
                     </div>
                 </div>
             </section>
@@ -67,5 +79,6 @@
             
         </footer>
     </div>
+    <script src="/script.js"></script>
 </body>
 </html>
