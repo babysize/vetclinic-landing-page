@@ -37,3 +37,33 @@ function changeSlideForButton(e) {
 for(let button of buttonSlide) {
     button.addEventListener("click", changeSlideForButton);
 };
+
+var imgEmployee = document.getElementsByClassName("img-employee")
+var buttonChangeEmployee = document.getElementsByClassName("arrow")
+
+let start = 0
+let end = 5
+
+function carouselEmploy(e) {
+    // const pageWidth = document.documentElement.scrollWidth
+
+    if(e.target.classList.contains('next')){
+        if (imgEmployee[end] == imgEmployee[imgEmployee.length-1]) return
+        
+        imgEmployee[start].classList.toggle('img-employee-hidden')
+        start++
+        end++
+        imgEmployee[end].classList.toggle('img-employee-hidden')
+    }else{
+        if (imgEmployee[start] == imgEmployee[0]) return
+
+        imgEmployee[end].classList.toggle('img-employee-hidden')
+        start--
+        end--
+        imgEmployee[start].classList.toggle('img-employee-hidden')
+    }
+}
+
+for(let button of buttonChangeEmployee) {
+    button.addEventListener("click", carouselEmploy);
+};

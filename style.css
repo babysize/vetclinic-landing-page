@@ -408,9 +408,10 @@ body {
     height: 172px;
     width: 19%;
     border-radius: 20px;
+    border: 1px solid white;
     box-shadow: 1px 1px 10px #ece9e7;
     margin: 12px;
-    padding: 24px;
+    padding: 22px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -500,6 +501,10 @@ body {
     .count-services {
         display: none;
     }
+
+    .service:active .name-service {
+        color: #FFC59E;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -516,3 +521,74 @@ body {
         display: inline;
     }
 }
+
+/* ------------------------
+ history and employees
+ ----------------------- */
+.history-and-employees {
+    background: #FBF8F8;
+}
+ .history-and-employees__container {
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+
+ .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .history-and-employees h1 {
+    font-family: 'SchoolBook';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #080606;
+ }
+
+ .text-histiry{
+    width: 30%;
+ }
+
+ .text-small {
+    font-family: 'Futura New';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 20px;
+    line-height: 30px;
+    color: #59443F;
+ }
+
+ .carusel-employees {
+    display: flex;
+ }
+
+ .link-history-and-employees {
+    text-transform: uppercase;
+    color: #FFC59E;
+    letter-spacing: 0.5px;
+ }
+
+ .carusel-employees {
+    margin: 2% 0 2% 0;
+ }
+
+ .img-employee {
+    display: inline-flex;
+ }
+
+ .img-employee-hidden {
+    display:none
+ }
+
+ @media (max-width: 1399.98px){
+    .text-histiry {
+        width: 60%;
+    }
+ }
