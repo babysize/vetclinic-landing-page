@@ -633,3 +633,57 @@ body {
     }
 
  }
+
+ /* -----------------------------
+ statistic
+ ----------------------------- */
+
+ .statistic__container {
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .statistic__container h1 {
+    font-family: 'SchoolBook';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 144px;
+    line-height: 110px;
+    margin: 0;
+ }
+
+ .statistic__container h2 {
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 110px;
+    color: #080606;
+    margin: 20px;
+}
+
+.statistic__container img {
+    margin-right: -20%;
+    margin-top: -5%;
+}
+
+@media (max-width: 1399.98px){
+    .statistic__container {
+        height: 600px;
+    }
+
+    .statistic__container img {
+        display: none;
+    }
+
+    .statistic__container h1 {
+        font-size: 80px;
+        line-height: 80px;
+     }
+    
+     .statistic__container h2 {
+        font-size: 38px;
+        line-height: 80px;
+    }
+}
