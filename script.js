@@ -62,6 +62,16 @@ function carouselEmploy(e) {
         end--
         imgEmployee[start].classList.toggle('img-employee-hidden')
     }
+
+    let elem = start == 0 ? 0 : end == imgEmployee.length-1 ? 1 : -1
+
+    if(elem != -1) 
+        buttonChangeEmployee[elem].classList.add('arrow-disabeld')
+    else
+        for (let b of buttonChangeEmployee){
+            b.classList.remove('arrow-disabeld')
+        }
+
 }
 
 for(let button of buttonChangeEmployee) {
