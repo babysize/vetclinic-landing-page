@@ -705,6 +705,7 @@ why we
     font-size: 45px;
     line-height: 40px;
     color: #080606;
+    margin-bottom: 4%
 }
 
 .list_reason {
@@ -757,5 +758,90 @@ why we
 @media (max-width: 1399.98px) { 
     .why-we {
         display: none
+    }
+}
+
+/* -------------------------
+aplication 
+------------------------- */
+
+.application {
+    background-color: #FFC59E;
+}
+
+.application__container {
+    height: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left:230px;
+}
+
+.link-to-app {
+    display: flex;
+    flex-direction: column;
+    margin-right: -10%;
+}
+
+.link-to-app h1{
+    font-weight: 100;
+    font-size: 80px;
+    line-height: 110px;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.app-store{
+    margin: 12px 13px;
+}
+
+.preview-app {
+    display: flex;
+    margin-bottom: -10%;
+}
+
+.preview-img {
+    margin-left: -20%;
+}
+
+@media (max-width: 1599.98px) {
+    .application__container {
+        height: 960px;
+        margin: 0 5%;
+    }
+
+    .link-to-app {
+        margin-right: 1%;
+    }
+
+    .preview-img {
+        margin: 0;
+    }
+    
+    .preview-img-dog {
+        display: none;
+    }
+}
+
+@media (max-width: 1199.98px) { 
+    .preview-img{
+        display: none;
+    }
+
+    .application__container {
+        height: 800px;
+        justify-content: center
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    .link-to-app h1{
+        font-size: 50px;
+        line-height: 80px;
+    }
+
+    .application__container {
+        height: 600px;
     }
 }
