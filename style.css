@@ -687,3 +687,75 @@ body {
         line-height: 80px;
     }
 }
+
+/* ----------------------------
+why we
+---------------------------- */
+
+.why-we__container {
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.why-we__container h1 {
+    font-family: 'SchoolBook';
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 40px;
+    color: #080606;
+}
+
+.list_reason {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.reason {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2% 3%;
+}
+
+.reason-name {
+    font-family: 'SchoolBook';
+    font-weight: 400;
+    font-size: 30px;
+    color: #080606;
+    margin: 0 0 35px 0;
+}
+
+.reason-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reason-description p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #59443F;
+    width: 75%;
+    text-align: start;
+    margin: 0 0;
+}
+
+@media (max-width: 1599.98px) {
+    .reason-description p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .reason-description img {
+        height: 50%
+    }
+}
+
+@media (max-width: 1399.98px) { 
+    .why-we {
+        display: none
+    }
+}
