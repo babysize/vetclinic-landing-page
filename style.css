@@ -845,3 +845,98 @@ aplication
         height: 600px;
     }
 }
+
+/* --------------------------------
+location
+-------------------------------- */
+.location-inf {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location__container {
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 230px;
+}
+
+.location h1 {
+    font-family: 'SchoolBook';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #080606;
+    margin: 70px 0;
+}
+
+.clinic {
+    margin-bottom: 30px;
+}
+
+.clinic-name {
+    font-family: 'SchoolBook';
+    font-weight: 400;
+    font-size: 30px;
+    color: #080606;
+    margin: 0 0 2% 0;
+}
+
+.clinic-inf {
+    display: flex;
+}
+
+.clinic-inf img {
+    margin: 10px;
+}
+
+.clinic-inf p{
+    /* font-family: 'Futura New'; */
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #59443F;
+    margin-left: 3%;
+}
+
+@media (max-width: 1840px) {
+    .location__container {
+        align-items: center
+    }
+    .location-inf {
+        display: flex;
+        flex-direction: column
+    }
+
+    .clinics {
+        display: flex;
+    }
+
+    .clinic {
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 1199.98px) { 
+    .location__container {
+        height: 400px;
+        margin: 0 10%;
+        align-items: inherit;
+    }
+    .map {
+        display: none;
+    }
+
+    .clinic {
+        margin: 0 5%;
+    }
+
+    .location h1 {
+        display: none;
+    }
+
+    .clinic p {
+        margin: 15px 0;
+    }
+}
