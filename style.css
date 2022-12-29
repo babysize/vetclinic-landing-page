@@ -792,7 +792,7 @@ aplication
 }
 
 .app-store{
-    margin: 12px 13px;
+    margin: 12px 13px 12px 0;
 }
 
 .preview-app {
@@ -938,5 +938,128 @@ location
 
     .clinic p {
         margin: 15px 0;
+    }
+}
+
+/* -----------------------
+footer
+----------------------- */
+.footer {
+    background-color: #59443F;
+}
+
+.footer__container {
+    height: 469px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 3%;
+}
+
+.footter-left-side {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.footter-logo {
+    margin: 0 22px;;
+}
+
+.clinic-title h1{
+    font-family: 'SchoolBook';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 46px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.clinic-title p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: flex-start
+}
+
+.menu-footer ul{
+    padding: 0 100px 0 0;
+}
+
+.menu-column a {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 30%;
+}
+
+.footer .social__list {
+    margin: 30px 0;
+}
+
+.link-mail {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1599.98px) {
+    .menu-footer ul{
+        padding: 0 50px 0 0;
+    }
+    
+    .menu-column a {
+        font-size: 16px;
+    }
+
+    .footer .social-item {
+        padding-right: 30px;
+    }
+
+    .link-mail {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .clinic-title{
+        display: none;
+    }
+
+    .footter-left-side {
+        width: 100%;
+        justify-content: left;
+        margin-left: 5%;
+    }
+
+    .footter-rigth-side{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .footter-logo {
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 991.98px){
+    .footter-rigth-side {
+        display: none;
+    }
+
+    .footer__container {
+        height: 300px;
     }
 }
